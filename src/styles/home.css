@@ -17,7 +17,9 @@
     flex-direction: column;
     justify-content: flex-end;
 }
-
+.hero p {
+    font-size: 12px;
+}
 .hero-top, .hero-foot {
     display: flex;
     justify-content: space-between;
@@ -52,15 +54,19 @@
 }
 .hero-offer h2 {
     font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 .hero-offer button {
     border-radius: 100%;
     width: fit-content;
     align-self: flex-end;
     display: flex;
+    position: relative;
+    z-index: 2;
     padding: 10px;
     border: 2px solid transparent;
-    /* margin-top: 10px; */
     font-size: 16px;
     transition: all .3s ease-in-out;
     cursor: pointer;
@@ -72,6 +78,8 @@
 }
 .hero-offer img {
     width: 170px;
+    z-index: 1;
+    position: relative;
     margin-top: -100px;
     transform: translateY(70px);
 }
@@ -132,8 +140,8 @@
         margin-top: -80px;
     }
     .hero-offer h2 {
-        display: flex;
         font-size: 17px;
+        flex-direction: row;
         align-items: flex-start;
         justify-content: space-between;
     }
