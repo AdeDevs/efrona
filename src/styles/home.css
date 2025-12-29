@@ -10,12 +10,18 @@
     background-size: cover;
     box-sizing: border-box;
     padding: 20px 20px;
-    padding-top: 300px;
     overflow-y: hidden;
     gap: 30px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+.hero .jewel {
+    font-size: 15rem;
+    font-family: "Cormorant Garamond", sans-serif;
+    line-height: 100%;
+    margin: 40px auto 10px auto;
+    text-align: center;
 }
 .hero p {
     font-size: 12px;
@@ -121,10 +127,21 @@
     color: #000;
 }
 
+.hero-main {
+    background-color: #fff;
+}
+@media screen and (max-width: 750px) {
+    .hero .jewel {
+        font-size: 10rem;
+    }
+}
+
 @media screen and (max-width: 550px) {
     .hero {
         padding: 20px 15px;
-        padding-top: 200px;
+    }
+    .hero .jewel {
+        font-size: 8rem;
     }
     .hero br {
         display: none;

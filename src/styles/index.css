@@ -29,6 +29,8 @@ a {
     color: #fff;
     align-items: center;
     position: fixed;
+    background-color: #18181b00;
+    backdrop-filter: blur(10px);
     z-index: 1000;
     border-bottom: 1px solid #fff;
 }
