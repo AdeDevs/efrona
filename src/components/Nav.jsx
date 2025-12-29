@@ -2,9 +2,13 @@ import { useEffect, useState } from "react";
 
 export default function Nav() {
     const [showMenu, setShowMenu] = useState(false)
+    const [changeStuff, setChangeStuff] = useState(false)
     const toggleMenu = () => {
         setShowMenu(!showMenu)
     }
+    useEffect (() => {
+        setChangeStuff(!changeStuff)
+    }, [showMenu])
     useEffect(() => {
         if (showMenu) {
             document.body.classList.add("no-scroll");
@@ -15,7 +19,7 @@ export default function Nav() {
 
     return (
         <div className="nav-bar">
-            <nav className="navigation">
+            <nav className={`navigation ${changeStuff ? "" : "show"}`}>
                 <ul className="nav">
                     <li className="toggle">
                         <span className="uno"></span>

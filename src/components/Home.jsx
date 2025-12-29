@@ -34,8 +34,22 @@ export default function HomePage() {
                         <h1>Our collections</h1>
                         <ul className="collection-control">
                             <li><ion-icon name="arrow-forward-sharp"></ion-icon></li>
-                            <li><ion-icon name="arrow-backward-sharp"></ion-icon></li>
+                            <li><ion-icon name="arrow-back-sharp"></ion-icon></li>
                         </ul>
+                    </div>
+                    <div className="collection-box">
+                        <div className="collection-card">
+                            <button>Open Page</button>
+                            <p>Bracelets</p>
+                        </div>
+                        <div className="collection-card">
+                            <button>Open Page</button>
+                            <p>Rings</p>
+                        </div>
+                        <div className="collection-card">
+                            <button>Open Page</button>
+                            <p>Earings</p>
+                        </div>
                     </div>
                 </section>
             </main>
