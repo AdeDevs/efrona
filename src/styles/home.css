@@ -127,13 +127,122 @@
     color: #000;
 }
 
-.hero-main {
+.home-main {
+    background-color: #f4f1eb;
+    color: #000;
+    box-sizing: border-box;
+}
+.collections {
+    padding: 80px 20px 30px 30px;
+    box-sizing: border-box;
+}
+.collection-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.collection-head .collection-control {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 10px;
+}
+.collection-control li {
+    border: 1px solid #000;
+    border-radius: 100%;
+    display: flex;
+    padding: 8px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    &:hover {
+        background-color: #000;
+        color: #fff;
+    }
+}
+.collection-head h1 {
+    font-family: "Cormorant Garamond", sans-serif;
+    font-size: 4.5em;
+    line-height: 85%;
+    text-transform: capitalize;
+}
+.collection-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    margin: 20px auto;
+    gap: 20px;
+}
+.collection-card {
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.collection-card button {
+    padding: 10px 20px;
     background-color: #fff;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    font-size: 13px;
+    width: fit-content;
+    align-self: flex-end;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    &:hover {
+        background-color: transparent;
+        color: #fff;
+        border-color: #fff;
+    }
+}
+.collection-card p {
+    font-size: 30px;
+    font-family: "Cormorant Garamond", sans-serif;
+    padding: 9px 22px;
+    background-color: #000000b6;
+    width: fit-content;
+    font-weight: 300;
+    line-height: 100%;
+    color: #fff;
+}
+.collection-box .bracelets {
+    background-image: url(../assets/bra.png);
+}
+.collection-box .rings {
+    background-image: url(../assets/rings.jpeg);
+}
+.collection-box .earings {
+    background-image: url(../assets/earrings.png);
 }
 @media screen and (max-width: 750px) {
     .hero .jewel {
         font-size: 10rem;
     }
+    .collections {
+        padding: 80px 20px 30px 20px;
+    }
+    .collection-box {
+        display: flex;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    .collection-card {
+        padding: 15px;
+    }
+    .collection-box .bracelets, .collection-box .rings {
+        min-width: 350px;
+    }
+    .collection-box .earings {
+        min-width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 550px) {
@@ -169,5 +278,32 @@
     .hero-vid {
         align-self: flex-start;
         width: 70%;
+    }
+    .collections {
+        padding: 60px 15px 20px 15px;
+    }
+    .collection-head h1 {
+        font-size: 3.3em;
+    }
+    .collection-control li {
+        font-size: 14px;
+        padding: 6px;
+    }
+    .collection-box {
+        gap: 10px;
+    }
+    .collection-box .bracelets, .collection-box .rings, .collection-box .earings {
+        min-width: 95%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .collection-head {
+        flex-direction: column;
+        gap: 10px;
+        align-items: normal;
+    }
+    .collection-head .collection-control {
+        align-self: flex-end;
     }
 }

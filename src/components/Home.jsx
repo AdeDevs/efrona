@@ -33,20 +33,20 @@ export default function HomePage() {
                     <div className="collection-head">
                         <h1>Our collections</h1>
                         <ul className="collection-control">
-                            <li><ion-icon name="arrow-forward-sharp"></ion-icon></li>
                             <li><ion-icon name="arrow-back-sharp"></ion-icon></li>
+                            <li><ion-icon name="arrow-forward-sharp"></ion-icon></li>
                         </ul>
                     </div>
                     <div className="collection-box">
-                        <div className="collection-card">
+                        <div className="collection-card bracelets">
                             <button>Open Page</button>
                             <p>Bracelets</p>
                         </div>
-                        <div className="collection-card">
+                        <div className="collection-card rings">
                             <button>Open Page</button>
                             <p>Rings</p>
                         </div>
-                        <div className="collection-card">
+                        <div className="collection-card earings">
                             <button>Open Page</button>
                             <p>Earings</p>
                         </div>
