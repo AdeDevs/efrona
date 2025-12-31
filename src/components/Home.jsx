@@ -1,4 +1,8 @@
 import offer from "../assets/offer.png"
+import locket from "../assets/locket.png"
+import necklace from "../assets/necklace.jpg"
+import pendant from "../assets/pendant.png"
+import bracelet from "../assets/gold-bra.png"
 
 export default function HomePage() {
     return (
@@ -14,7 +18,7 @@ export default function HomePage() {
                     </div>
                     <div className="hero-offer">
                         <h2>Only today - 50% OFF <button className="round-btn"><ion-icon name="arrow-forward-sharp"></ion-icon></button></h2>
-                        
+
                         <img src={offer} alt="offer" />
                     </div>
                 </section>
@@ -32,7 +36,7 @@ export default function HomePage() {
                 <section className="collections">
                     <div className="collection-head">
                         <h1 className="big-text">Our collections</h1>
-                        <ul className="collection-control">
+                        <ul className="btn-control">
                             <li><ion-icon name="arrow-back-sharp"></ion-icon></li>
                             <li><ion-icon name="arrow-forward-sharp"></ion-icon></li>
                         </ul>
@@ -77,6 +81,68 @@ export default function HomePage() {
                                 <li>Open Stores</li>
                             </ul>
                         </div>
+                    </div>
+                </section>
+                <section className="arrivals-box">
+                    <div className="arrival-head">
+                        <h1 className="big-text">Last Arrivals</h1>
+                        <p>Crafted with precision and passion, these pieces <br /> are destined to become cherished heirlooms.</p>
+                    </div>
+                    <div className="arrivals">
+                        <div className="arrival-card locket">
+                            <ul className="arrival-btns">
+                                <li><ion-icon name="heart-outline"></ion-icon></li>
+                                <li><ion-icon name="cart-outline"></ion-icon></li>
+                            </ul>
+                            {/* <img src={locket} alt="locket" /> */}
+                            <div className="arrival-info">
+                                <h2>Earings Heart Locket</h2>
+                                <p>$620</p>
+                            </div>
+                        </div>
+                        <div className="arrival-card necklace">
+                            <ul className="arrival-btns">
+                                <li><ion-icon name="heart-outline"></ion-icon></li>
+                                <li><ion-icon name="cart-outline"></ion-icon></li>
+                            </ul>
+                            <img src={necklace} alt="necklace" />
+                            <div className="arrival-info">
+                                <h2>Layer cake necklace set</h2>
+                                <p>$1200</p>
+                            </div>
+                        </div>
+                        <div className="arrival-card pendant">
+                            <ul className="arrival-btns">
+                                <li><ion-icon name="heart-outline"></ion-icon></li>
+                                <li><ion-icon name="cart-outline"></ion-icon></li>
+                            </ul>
+                            <img src={pendant} alt="pendant" />
+                            <div className="arrival-info">
+                                <h2>t1 circle pendant</h2>
+                                <p>$1800</p>
+                            </div>
+                        </div>
+                        <div className="arrival-card golden">
+                            <ul className="arrival-btns">
+                                <li><ion-icon name="heart-outline"></ion-icon></li>
+                                <li><ion-icon name="cart-outline"></ion-icon></li>
+                            </ul>
+                            <img src={bracelet} alt="bracelet" />
+                            <div className="arrival-info">
+                                <h2>gold bracelet with texture</h2>
+                                <p>$800</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="arrival-foot">
+                        <ul className="btn-control">
+                            <li><ion-icon name="arrow-back-sharp"></ion-icon></li>
+                            <li><ion-icon name="arrow-forward-sharp"></ion-icon></li>
+                        </ul>
+                        <ul className="arrival-prd">
+                            <li><span></span>48 Products</li>
+                            <button>All Products</button>
+                        </ul>
                     </div>
                 </section>
             </main>
