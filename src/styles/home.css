@@ -405,17 +405,16 @@
     .about p {
         width: 100%;
     }
-    .info {
+    /* .info {
         flex-direction: row;
         gap: 10px;
     }
     .stats {
         flex-direction: column;
-        padding-bottom: 50px;
-    }
-    /* .stats ul h3 {
-        font-size: clamp(40px, 6vw, 75px);
     } */
+    .stats ul h3 {
+        font-size: clamp(40px, 6vw, 75px);
+    }
 }
 
 @media screen and (max-width: 400px) {
