@@ -411,6 +411,7 @@
     }
     .stats {
         flex-direction: column;
+        padding-bottom: 50px;
     }
     /* .stats ul h3 {
         font-size: clamp(40px, 6vw, 75px);
