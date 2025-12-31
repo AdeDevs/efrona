@@ -1,8 +1,18 @@
+.home button {
+    transition: all .3s ease-in-out;
+    font-family: inherit;
+    width: fit-content;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
 .home {
     font-family: "Montserrat", sans-serif;
     background-color: var(--dark-color);
     color: #fff;
 }
+
+/* hero styling starts here */
 
 .hero {
     background-image: url(../assets/hero.png);
@@ -18,7 +28,7 @@
 }
 .hero .jewel {
     font-size: 15rem;
-    font-family: "Cormorant Garamond", sans-serif;
+    font-family: var(--fancy-font);
     line-height: 100%;
     margin: 40px auto 10px auto;
     text-align: center;
@@ -132,6 +142,8 @@
     color: #000;
     box-sizing: border-box;
 }
+/*collections section styling starts here*/
+
 .collections {
     padding: 80px 20px 30px 30px;
     box-sizing: border-box;
@@ -160,10 +172,10 @@
         color: #fff;
     }
 }
-.collection-head h1 {
-    font-family: "Cormorant Garamond", sans-serif;
+.big-text {
+    font-family: var(--fancy-font);
     font-size: 4.5em;
-    line-height: 85%;
+    line-height: 90%;
     text-transform: capitalize;
 }
 .collection-box {
@@ -201,7 +213,7 @@
 }
 .collection-card p {
     font-size: 30px;
-    font-family: "Cormorant Garamond", sans-serif;
+    font-family: var(--fancy-font);
     padding: 9px 22px;
     background-color: #000000b6;
     width: fit-content;
@@ -218,6 +230,75 @@
 .collection-box .earings {
     background-image: url(../assets/earrings.png);
 }
+
+/* about section styling starts  here */
+.about-box {
+    padding: 20px 30px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.about {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.about p {
+    font-size: 13px;
+    width: 80%;
+}
+.about button {
+    background-color: #a52423;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    border: 1px solid transparent;
+    &:hover {
+        background-color: transparent;
+        border-color: #a52423;
+        color: #a52423;
+    }
+}
+
+.info {
+    display: flex;
+    gap: 5vw;
+    box-sizing: border-box;
+}
+.about-img {
+    height: 500px;
+    width: 30vw;
+    background-image: url(../assets/owner.png);
+    background-position: center;
+    background-size: cover;
+}
+.stats {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    padding-bottom: 50px;
+
+}
+.stats ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+}
+.stats ul h3 {
+    font-family: var(--fancy-font);
+    font-size: clamp(36px, 6vw, 65px);
+    line-height: 100%;
+    font-weight: 300;
+}
+.stats ul:nth-child(1) h3 {
+    margin-top: -20px;
+}
+
 @media screen and (max-width: 750px) {
     .hero .jewel {
         font-size: 10rem;
@@ -242,7 +323,25 @@
     .collection-box .earings {
         min-width: 100%;
     }
-
+    .about-box {
+        padding: 20px;
+    }
+    .info {
+        flex-direction: column;
+    }
+    .about-img {
+        height: 500px;
+        width: 100%;
+    }
+    .stats {
+        flex-direction: row;
+        align-items: flex-start;
+        padding-bottom: 0;
+    }
+    .stats ul:nth-child(1) h3 {
+        margin-top: 0;
+    }
+    
 }
 
 @media screen and (max-width: 550px) {
@@ -282,8 +381,8 @@
     .collections {
         padding: 60px 15px 20px 15px;
     }
-    .collection-head h1 {
-        font-size: 3.3em;
+    .big-text {
+        font-size: 2.8em;
     }
     .collection-control li {
         font-size: 14px;
@@ -294,6 +393,24 @@
     }
     .collection-box .bracelets, .collection-box .rings, .collection-box .earings {
         min-width: 95%;
+    }
+    .about-box {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px 15px;
+    }
+    .about p {
+        width: 100%;
+    }
+    .info {
+        flex-direction: row;
+        gap: 20px;
+    }
+    .stats {
+        flex-direction: column;
+    }
+    .stats ul h3 {
+        font-size: clamp(40px, 6vw, 75px);
     }
 }
 

@@ -3,11 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Italianno&family=Quintessential&family=Tangerine:wght@400;700&display=swap');
 
 :root {
-    --dark-color: #1a1a1a;
-    --blue-color: #00418a;
-    --green-color: #e4f52c;
-    --red-color: #e33932;
-    --purple-color: #a045ed;
+    --fancy-font: "Cormorant Garamond", sans-serif;
 }
 .no-scroll{
     overflow: hidden;
@@ -39,7 +35,7 @@ a {
 }
 .logo {
     width: 100%;
-    font-family: "Cormorant Garamond", sans-serif;
+    font-family: var(--fancy-font);
     text-align: center;
     font-size: 30px;
     line-height: 100%;

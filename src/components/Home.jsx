@@ -31,7 +31,7 @@ export default function HomePage() {
             <main className="home-main">
                 <section className="collections">
                     <div className="collection-head">
-                        <h1>Our collections</h1>
+                        <h1 className="big-text">Our collections</h1>
                         <ul className="collection-control">
                             <li><ion-icon name="arrow-back-sharp"></ion-icon></li>
                             <li><ion-icon name="arrow-forward-sharp"></ion-icon></li>
@@ -49,6 +49,33 @@ export default function HomePage() {
                         <div className="collection-card earings">
                             <button>Open Page</button>
                             <p>Earings</p>
+                        </div>
+                    </div>
+                </section>
+                <section className="about-box">
+                    <div className="about">
+                        <h1 className="big-text">CEO And Designer</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, saepe nemo molestiae, sint ratione assumenda obcaecati iste quos, ad animi adipisci? Iure nobis deleniti, amet distinctio labore repudiandae alias culpa.
+                            Minus tempora temporibus sunt voluptatibus sapiente beatae accusantium autem! Voluptates odit ullam ut quas beatae vel expedita vitae quaerat dolorum enim reprehenderit.
+                        </p>
+                        <button>Contact Me</button>
+                    </div>
+                    <div className="info">
+                        <div className="about-img"></div>
+                        <div className="stats">
+                            <ul>
+                                <h3>+300</h3>
+                                <li>Successful projects</li>
+                            </ul>
+                            <ul>
+                                <h3>+10</h3>
+                                <li>Awards for best design</li>
+                            </ul>
+                            <ul>
+                                <h3>+15</h3>
+                                <li>Open Stores</li>
+                            </ul>
                         </div>
                     </div>
                 </section>
