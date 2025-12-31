@@ -289,6 +289,9 @@
     gap: 10px;
     list-style-type: none;
 }
+.stats ul li {
+    font-size: 12px;
+}
 .stats ul h3 {
     font-family: var(--fancy-font);
     font-size: clamp(36px, 6vw, 65px);
@@ -409,9 +412,9 @@
     .stats {
         flex-direction: column;
     }
-    .stats ul h3 {
+    /* .stats ul h3 {
         font-size: clamp(40px, 6vw, 75px);
-    }
+    } */
 }
 
 @media screen and (max-width: 400px) {
