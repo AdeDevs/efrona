@@ -459,6 +459,205 @@
     }
 }
 
+/* customers section styling starts here*/
+.customers-box {
+    margin-top: 30px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+.reviews {
+    display: flex;
+    gap: 30px;
+    overflow-y: scroll;
+    scrollbar-width: 0;
+    margin-top: 50px;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+.customer {
+    background-color: #fff;
+    border: 1px solid #daa52069;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 70%;
+    width: fit-content;
+    padding: 20px;
+    box-sizing: border-box;
+    min-width: fit-content;
+    gap: 40px;
+}
+.avatar {
+    border-radius: 100%;
+    object-position: center;
+    object-fit: cover;
+    border: 2px solid #daa52069;
+    height: 100px;
+    min-width: 100px;
+}
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.testimonial span {
+    font-family: var(--fancy-font);
+    font-weight: 700;
+}
+.testimonial p {
+    font-style: italic;
+    line-height: 25px;
+    font-size: 13px;
+}
+.testimonial h3 {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* discount section style starts here */
+.discount-box {
+    padding: 50px 30px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 20px;
+    background-color: #a52423;
+    color: #fff;
+    position: relative;
+}
+.discount {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.discount p {
+    font-size: 13px;
+    z-index: 2;
+}
+.discount button {
+    background-color: #fff;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #000;
+    border: 1px solid transparent;
+    z-index: 2;
+    &:hover {
+        background-color: transparent;
+        border-color: #fff;
+        color: #fff;
+    }
+}
+.discount-box img {
+    position: absolute;
+    right: 70px;
+    bottom: 0;
+    width: 30%;
+    min-width: 300px;
+}
+
+/* footer styling starts here*/
+footer {
+    background-color: #1f1f1f;
+    box-sizing: border-box;
+}
+
+.home-foot {
+    display: grid;
+    padding: 40px 20px;
+    border-bottom: 1px solid #ffffff94;
+    grid-template-columns: 1fr 3fr;
+    gap: 15px;
+}
+.foot-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.foot-intro p {
+    font-size: 13px;
+    color: #ffffff94;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.foot-intro a {
+    color: #ffffff94;
+    font-weight: 400;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    font-size: 13px;
+    &:hover {
+        color: #fff;
+        font-weight: 500;
+    }
+}
+.foot-intro ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+.foot-intro ul img {
+    width: 35px;
+    height: 20px;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 2px;
+    /* border: 1px solid red; */
+}
+
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+.links ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-transform: capitalize;
+}
+.links ul li {
+    color: #ffffff94;
+    font-weight: 400;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    font-size: 13px;
+    &:hover {
+        color: #fff;
+        font-weight: 500;
+    }
+}
+.links ul .bold {
+    cursor: text;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    color: #ffffff94;
+    padding: 15px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+}
+.copyright a {
+    font-weight: 400;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    &:hover {
+        color: #fff;
+        font-weight: 500;
+    }
+}
+
 @media screen and (max-width: 750px) {
     .hero .jewel {
         font-size: 10rem;
@@ -483,7 +682,7 @@
     .collection-box .earings {
         min-width: 100%;
     }
-    .about-box, .arrivals-box {
+    .about-box, .arrivals-box, .customers-box {
         padding: 20px;
     }
     .info {
@@ -500,6 +699,30 @@
     }
     .stats ul:nth-child(1) h3 {
         margin-top: 0;
+    }
+    .reviews {
+        gap: 10px;
+    }
+    .customer {
+        max-width: auto;
+        padding: 15px;
+        min-width: 100%;
+    }
+    .discount-box img {
+        right: 20px;
+        width: 200px;
+    }
+    .discount-box {
+        padding: 50px 20px;
+    }
+    .foot-intro p {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .home-foot {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
     
 }
@@ -579,7 +802,7 @@
     .arrival-head p{
         text-align: right;
     }
-    .arrival-head br {
+    .arrival-head br, .customer br, .discount br {
         display: none;
     }
     .arrivals .locket, .arrivals .golden {
@@ -592,6 +815,36 @@
     .arrivals .pendant {
         min-width: 250px;
         height: 450px;
+    }
+    .customers-box {
+        padding: 20px 15px;
+    }
+    .customer {
+        min-width: 100%;
+        gap: 20px;
+    }
+    .discount-box {
+        padding: 50px 15px;
+    }
+    .discount-box img {
+        right: 20px;
+        min-width: auto;
+        width: 250px;
+    }
+    .home-foot {
+        padding: 40px 15px;
+        gap: 50px;
+    }
+    .links {
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+    .foot-intro {
+        gap: 25px;
+    }
+    .foot-intro ul img {
+        width: 40px;
+        height: 25px;
     }
 }
 

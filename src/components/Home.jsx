@@ -1,8 +1,15 @@
 import offer from "../assets/offer.png"
-import locket from "../assets/locket.png"
 import necklace from "../assets/necklace.jpg"
 import pendant from "../assets/pendant.png"
 import bracelet from "../assets/gold-bra.png"
+import batman from "../assets/bat.jpeg"
+import yemi from "../assets/yemi.png"
+import discount from "../assets/foot.png"
+import visa from "../assets/visa.png"
+import mastercard from "../assets/mastercard.png"
+import amex from "../assets/amex.png"
+import jcb from "../assets/jcb.png"
+import discover from "../assets/discover.png"
 
 export default function HomePage() {
     return (
@@ -145,7 +152,90 @@ export default function HomePage() {
                         </ul>
                     </div>
                 </section>
+                <section className="customers-box">
+                    <h1 className="big-text">Our Satisfied Customers</h1>
+                    <div className="reviews">
+                        <div className="customer">
+                            <img className="avatar" src={batman} alt="avatar" />
+                            <div className="testimonial">
+                                <p>
+                                    "Absolutely in love with my custom necklace from <span>EFRONA</span>. <br /> The attention to detail and the quality of materials <br /> surpassed my expectations.
+                                </p>
+                                <h3>Dark Knight</h3>
+                            </div>
+                        </div>
+                        <div className="customer">
+                            <img className="avatar" src={yemi} alt="avatar" />
+                            <div className="testimonial">
+                                <p>
+                                    "Absolutely in love with my custom necklace from <span>EFRONA</span>. <br /> The attention to detail and the quality of materials <br /> surpassed my expectations.
+                                </p>
+                                <h3>Adeyemi</h3>
+                            </div>
+                        </div>
+                        <div className="customer">
+                            <img className="avatar" src={batman} alt="avatar" />
+                            <div className="testimonial">
+                                <p>
+                                    "Absolutely in love with my custom necklace from <span>EFRONA</span>. <br /> The attention to detail and the quality of materials <br /> surpassed my expectations.
+                                </p>
+                                <h3>Dark Knight</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section className="discount-box">
+                    <div className="discount">
+                        <h1 className="big-text">Discounted holiday collection</h1>
+                        <p>We have selected for you the best collection for the <br /> upcoming holiday with a pleasant discount.</p>
+                        <button>Explore More</button>
+                    </div>
+                    <img src={discount} alt="discount" />
+                </section>
             </main>
+            <footer>
+                <section className="home-foot">
+                    <div className="foot-intro">
+                        <h1 className="big-text">EFRONA</h1>
+                        <p>23 Isale General, Ogbomoso <br /> Oyo State, Nigeria <a href="#">efrona@gmail.com</a></p>
+                        <ul className="cards">
+                            <li><img src={visa} alt="visa" /></li>
+                            <li><img src={mastercard} alt="mastercard" /></li>
+                            <li><img src={amex} alt="amex" /></li>
+                            <li><img src={jcb} alt="jcb" /></li>
+                            <li><img src={discover} alt="discover" /></li>
+                        </ul>
+                    </div>
+                    <div className="links">
+                        <ul>
+                            <li className="bold">useful links</li>
+                            <li>home</li>
+                            <li>blog</li>
+                            <li>store</li>
+                            <li>sale</li>
+                        </ul>
+                        <ul>
+                            <li className="bold">contact us</li>
+                            <li>+19 2 4567 8900</li>
+                            <li>+19 2 4567 9900</li>
+                            <br />
+                            <li>monday - friday</li>
+                            <li>8AM - 5PM</li>
+                            <li>Saturday - sunday</li>
+                            <li>10AM - 12PM</li>
+                        </ul>
+                        <ul>
+                            <li className="bold">customer service</li>
+                            <li>orders</li>
+                            <li>cart</li>
+                            <li>wishlist</li>
+                            <li>account</li>
+                            <li>privacy policy</li>
+                        </ul>
+                    </div>
+                </section>
+                <p className="copyright">Copyright <a href="https://iamadedevs.vercel.app" target="_blank">&copy; AdeDevs</a>. All Rights Reserved.</p>
+            </footer>
         </div>
     )
 }
