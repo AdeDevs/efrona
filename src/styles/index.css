@@ -18,7 +18,7 @@ a {
 .navigation {
     font-family: "Montserrat", sans-serif;
     width: 100%;
-    padding: 0 20px;
+    padding: 10px 20px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
@@ -59,7 +59,7 @@ a {
     z-index: 1001;
 }
 .toggle {
-    width: 8%;
+    width: 5%;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -87,14 +87,18 @@ a {
     font-size: 13px;
     transition: all .3s ease-in-out;
 }
-.nav li:hover, .hamburger li:hover, .nav li:nth-child(1), .hamburger li:nth-child(1) {
+.nav li:hover, .hamburger li:hover, .nav .hm, .hamburger li:nth-child(1) {
     font-weight: 500;
-    color: #fff;
+    color: goldenrod;
 }
 
 .extras {
     justify-content: flex-end;
     z-index: 1001;
+    width: 100%;
+}
+.extras a {
+    text-decoration: none;
 }
 .extras button {
     background-color: #333;
@@ -123,7 +127,9 @@ a {
         color: #000;
     }
 }
-
+.hamburger li {
+    border-radius: 0;
+}
 .hamburger {
         position: fixed;
         background-color: #18181ba1;

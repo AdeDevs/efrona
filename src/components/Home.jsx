@@ -10,6 +10,10 @@ import mastercard from "../assets/mastercard.png"
 import amex from "../assets/amex.png"
 import jcb from "../assets/jcb.png"
 import discover from "../assets/discover.png"
+import calendar from "../assets/calendar.png"
+import certified from "../assets/certified.png"
+import gift from "../assets/gift.png"
+import wrap from "../assets/package.png"
 import { motion } from "framer-motion";
 import {
     fadeUp,
@@ -89,6 +93,22 @@ export default function HomePage() {
             </header>
 
             <main className="home-main">
+                <section className="info-box">
+                    <ul className="info-items">
+                        <motion.li variants={fadeUp} initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}><img src={wrap} alt="package" /> <span>Guaranteed Buy Back</span></motion.li>
+                        <motion.li variants={fadeUp} initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}><img src={gift} alt="gift" /> <span>Gift wrapping</span></motion.li>
+                        <motion.li variants={fadeUp} initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}><img src={certified} alt="certified" /> <span>tested and trusted</span></motion.li>
+                        <motion.li variants={fadeUp} initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}><img src={calendar} alt="calendar" /> <span>14 days return policy</span></motion.li>
+                    </ul>
+                </section>
                 <section className="collections">
                     <motion.div
                         className="collection-head"
@@ -328,6 +348,28 @@ export default function HomePage() {
                         </motion.div>
                     </motion.div>
                 </section>
+                <section className="contact-box" id="contact-box">
+                    <h1 className="big-text">Contact Us</h1>
+                    <div className="contact-card">
+                        <motion.div className="contact-img"
+                            variants={fadeRigt}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                        ></motion.div>
+                        <motion.form className="contact-form"
+                            action=""
+                            variants={fadeLeft}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}>
+                            <input type="text" placeholder="Enter Your Name"  required/>
+                            <input type="tel" placeholder="Enter Your Number"  required/>
+                            <textarea className="message" placeholder="Enter Your Message" required></textarea>
+                            <button>Submit</button>
+                        </motion.form>
+                    </div>
+                </section>
                 <section className="discount-box">
                     <motion.div
                         className="discount"
@@ -354,7 +396,6 @@ export default function HomePage() {
                         transition={{ delay: 0.2 }}
                     />
                 </section>
-
             </main>
             <footer>
                 <section className="home-foot">
@@ -363,7 +404,7 @@ export default function HomePage() {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
-                        >
+                    >
                         <h1 className="big-text">EFRONA</h1>
                         <p>23 Isale General, Ogbomoso <br /> Oyo State, Nigeria <a href="#">efrona@gmail.com</a></p>
                         <ul className="cards">
@@ -376,22 +417,22 @@ export default function HomePage() {
                     </motion.div>
                     <div className="links">
                         <motion.ul
-                        variants={cardReveal}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true }}
+                            variants={cardReveal}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
                         >
                             <li className="bold">useful links</li>
                             <li>home</li>
-                            <li>blog</li>
-                            <li>store</li>
+                            <li>our services</li>
+                            <li>our story</li>
                             <li>sale</li>
                         </motion.ul>
                         <motion.ul
-                        variants={cardReveal}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true }}
+                            variants={cardReveal}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
                         >
                             <li className="bold">contact us</li>
                             <li>+19 2 4567 8900</li>
@@ -403,16 +444,14 @@ export default function HomePage() {
                             <li>10AM - 12PM</li>
                         </motion.ul>
                         <motion.ul
-                        variants={cardReveal}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true }}
+                            variants={cardReveal}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
                         >
                             <li className="bold">customer service</li>
-                            <li>orders</li>
+                            <li>customer care</li>
                             <li>cart</li>
-                            <li>wishlist</li>
-                            <li>account</li>
                             <li>privacy policy</li>
                         </motion.ul>
                     </div>

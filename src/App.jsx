@@ -8,6 +8,7 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<HomePage/>} />
+        {/* <Route path="/cart" element={<CartDemo />} /> */}
       </Routes>
     </div>
   )

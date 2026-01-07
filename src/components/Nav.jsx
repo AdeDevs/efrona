@@ -29,20 +29,20 @@ export default function Nav() {
                         <span className="uno"></span>
                         <span className="dos"></span>
                     </li>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Store</li>
+                    <li className="hm">Home</li>
+                    <li>Our Story</li>
+                    <li>Our Services</li>
                 </ul>
                 <ul className={`hamburger extras ${showMenu ? "show" : ""}`}>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Store</li>
-                    <button>Contact Us</button>
+                    <li onClick={toggleMenu}>Home</li>
+                    <li onClick={toggleMenu}>Our Story</li>
+                    <li onClick={toggleMenu}>Our Services</li>
+                    <a href="#contact-box" onClick={toggleMenu}><button>Contact Us</button></a>
                 </ul>
 
-                <h1 className="logo">EFRONA</h1>
+                {/* <h1 className="logo">EFRONA</h1> */}
                 <ul className="extras">
-                    <button>Contact Us</button>
+                <a href="#contact-box"><button>Contact Us</button></a>
                     <li><ion-icon name="cart-outline"></ion-icon></li>
                 </ul>
                 
