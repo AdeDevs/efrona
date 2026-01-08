@@ -109,6 +109,57 @@ export default function HomePage() {
                         viewport={{ once: true }}><img src={calendar} alt="calendar" /> <span>14 days return policy</span></motion.li>
                     </ul>
                 </section>
+                <section className="categories-box">
+                <motion.div
+                        className="arrival-head"
+                        variants={fadeUp}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                    >
+                        <h1 className="big-text">What We Sell</h1>
+                        <p>
+                            Crafted with precision and passion, these are <br />
+                            the pieces that we sell to you and their stories.
+                        </p>
+                    </motion.div>
+                    <motion.div className="categories-card" 
+                        variants={staggerContainer}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}>
+                        <motion.div className="category" variants={fadeUp}>
+                            <div className="ctg-img"></div>
+                            <div className="ctg-info">
+                                <h1>Diamond</h1>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi non labore reprehenderit hic maiores ad laboriosam illum quasi quos? Iste voluptas incidunt ratione aspernatur, officiis perspiciatis voluptates corrupti. Quidem, at.
+                                </p>
+                                <a href="">See More</a>
+                            </div>
+                        </motion.div>
+                        <motion.div className="category" variants={fadeUp}>
+                            <div className="ctg-img"></div>
+                            <div className="ctg-info">
+                                <h1>Moissanites</h1>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi non labore reprehenderit hic maiores ad laboriosam illum quasi quos? Iste voluptas incidunt ratione aspernatur, officiis perspiciatis voluptates corrupti. Quidem, at.
+                                </p>
+                                <a href="">See More</a>
+                            </div>
+                        </motion.div>
+                        <motion.div className="category" variants={fadeUp}>
+                            <div className="ctg-img"></div>
+                            <div className="ctg-info">
+                                <h1>Zirconia</h1>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi non labore reprehenderit hic maiores ad laboriosam illum quasi quos? Iste voluptas incidunt ratione aspernatur, officiis perspiciatis voluptates corrupti. Quidem, at.
+                                </p>
+                                <a href="">See More</a>
+                            </div>
+                        </motion.div>
+                    </motion.div>
+                </section>
                 <section className="collections">
                     <motion.div
                         className="collection-head"
@@ -370,7 +421,7 @@ export default function HomePage() {
                         </motion.form>
                     </div>
                 </section>
-                <section className="discount-box">
+                {/* <section className="discount-box">
                     <motion.div
                         className="discount"
                         variants={fadeRigt}
@@ -395,7 +446,7 @@ export default function HomePage() {
                         viewport={{ once: true }}
                         transition={{ delay: 0.2 }}
                     />
-                </section>
+                </section> */}
             </main>
             <footer>
                 <section className="home-foot">
