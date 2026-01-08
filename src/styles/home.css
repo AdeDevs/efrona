@@ -186,6 +186,7 @@
     display: flex;
     overflow-x: scroll;
     gap: 15px;
+    align-items: stretch;
     scrollbar-width: 0;
     &::-webkit-scrollbar {
         display: none;
@@ -195,6 +196,8 @@
     border: 1px solid #a52423;
     width: 100%;
     min-width: 45vw;
+    display: flex;
+    flex-direction: column;
 }
 .category .ctg-img {
     /* box-sizing: border-box; */
@@ -205,11 +208,14 @@
     width: 100%;
 }
 .category .ctg-info {
+    flex-grow: 1;
     padding: 15px;
+    height: inherit;
     background-color: #a52423;
     display: flex;
     color: #fff;
     flex-direction: column;
+    justify-content: space-between;
     font-family: "Cormorant Garamond", sans-serif;
     box-sizing: border-box;
 }

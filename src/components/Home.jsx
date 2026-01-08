@@ -158,6 +158,36 @@ export default function HomePage() {
                                 <a href="">See More</a>
                             </div>
                         </motion.div>
+                        <motion.div className="category" variants={fadeUp}>
+                            <div className="ctg-img"></div>
+                            <div className="ctg-info">
+                                <h1>Watches</h1>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi non labore reprehenderit hic maiores ad laboriosam illum quasi quos? Iste voluptas incidunt ratione aspernatur, officiis perspiciatis voluptates corrupti. Quidem, at.
+                                </p>
+                                <a href="">See More</a>
+                            </div>
+                        </motion.div>
+                        <motion.div className="category" variants={fadeUp}>
+                            <div className="ctg-img"></div>
+                            <div className="ctg-info">
+                                <h1>Wedding <br /> & Engagement Rings</h1>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi non labore reprehenderit hic maiores ad laboriosam illum quasi quos? Iste voluptas incidunt ratione aspernatur, officiis perspiciatis voluptates corrupti. Quidem, at.
+                                </p>
+                                <a href="">See More</a>
+                            </div>
+                        </motion.div>
+                        <motion.div className="category" variants={fadeUp}>
+                            <div className="ctg-img"></div>
+                            <div className="ctg-info">
+                                <h1>Gifts</h1>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi non labore reprehenderit hic maiores ad laboriosam illum quasi quos? Iste voluptas incidunt ratione aspernatur, officiis perspiciatis voluptates corrupti. Quidem, at.
+                                </p>
+                                <a href="">See More</a>
+                            </div>
+                        </motion.div>
                     </motion.div>
                 </section>
                 <section className="collections">
